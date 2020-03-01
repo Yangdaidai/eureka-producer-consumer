@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  *
  * @Package com.young.consumer.feignclient
  * @ClassName HelloFeignClient
- * @Description
+ * @Description feign
  * @Author young
  * @Modify young
  * @Date 2020/2/29 23:51
