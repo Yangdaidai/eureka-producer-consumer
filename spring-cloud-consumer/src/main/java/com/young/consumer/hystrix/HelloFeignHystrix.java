@@ -19,6 +19,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HelloFeignHystrix implements HelloFeignClient {
     @Override
     public String hello(@RequestParam(value = "name") String name) {
-        return "hello" + name + ", this message send failed ";
+        return "hello " + name + ", this message send failed ";
     }
 }
