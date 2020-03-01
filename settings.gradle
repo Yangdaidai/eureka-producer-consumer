@@ -1,0 +1,5 @@
+rootProject.name = 'eureka-producer-consumer'
+include 'spring-cloud-consumer'
+include 'spring-cloud-producer'
+include 'spring-cloud-eureka'
+

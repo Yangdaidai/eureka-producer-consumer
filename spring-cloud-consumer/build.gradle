@@ -1,0 +1,22 @@
+/* 子模块项目名，jar名 */
+archivesBaseName = 'spring-cloud-consumer'
+
+//jar.enabled = true
+/* 需要org.springframework.boot插件 不需要打包成可执行的jar*/
+//bootJar.enabled = false
+
+ext {
+    springCloudVersion = "2.2.0.RELEASE"
+}
+
+/* 添加通用依赖 */
+dependencies {
+
+    compile(
+            "org.springframework.cloud:spring-cloud-starter-openfeign:${springCloudVersion}",
+            'com.google.code.gson:gson:2.8.6'
+
+    )
+
+
+}
