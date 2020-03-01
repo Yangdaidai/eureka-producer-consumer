@@ -1,5 +1,5 @@
 /* 子模块项目名，jar名 */
-archivesBaseName = 'spring-cloud-consumer'
+archivesBaseName = 'spring-cloud-consumer1'
 
 ext {
     springCloudVersion = "2.2.0.RELEASE"

@@ -1,5 +1,6 @@
 /* 子模块项目名，jar名 */
-archivesBaseName = 'spring-cloud-consumer'
+archivesBaseName = 'spring-cloud-turbine'
+
 
 ext {
     springCloudVersion = "2.2.0.RELEASE"
@@ -14,7 +15,6 @@ dependencies {
             "org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard:${springCloudVersion}",
 
             'com.google.code.gson:gson:2.8.6'
-
     )
 
 
