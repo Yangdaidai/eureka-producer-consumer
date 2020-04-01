@@ -1,13 +1,1 @@
 archivesBaseName = 'spring-cloud-eureka'
-
-sourceSets {
-    main {
-        resources {
-            srcDirs = ['src/main/java', 'src/main/resources']
-        }
-    }
-}
-
-springBoot {
-    buildInfo()
-}
