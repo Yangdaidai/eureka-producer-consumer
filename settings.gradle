@@ -4,4 +4,5 @@ include 'spring-cloud-consumer1'
 include 'spring-cloud-producer'
 include 'spring-cloud-eureka'
 include 'spring-cloud-turbine'
+include 'spring-cloud-adminserver'
 

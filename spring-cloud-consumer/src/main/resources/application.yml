@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: spring-cloud-consumer
@@ -28,3 +27,6 @@ management:
       exposure:
         include:  "*"
       base-path:  /actuator  #默认就是/actuator
+  endpoint:
+    health:
+      show-details: ALWAYS

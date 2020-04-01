@@ -63,15 +63,17 @@ subprojects {
         mavenCentral()
     }
 
-    dependencyManagement {
-        imports {
-            mavenBom "org.springframework.cloud:spring-cloud-dependencies:Hoxton.RELEASE"
-        }
+    ext {
+        set('springBootAdminVersion', "2.2.1")
+        set('springCloudVersion', "Hoxton.RELEASE")
     }
 
-    ext {
-        springCloudVersion = "2.2.0.RELEASE"
-        junitVersion = "5.2.0"
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
+
+        }
     }
 
     dependencies {
@@ -81,6 +83,8 @@ subprojects {
 
         implementation(
                 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server',
+                 'de.codecentric:spring-boot-admin-starter-client',
+
                 'com.google.code.gson:gson:2.8.6'
         )
 

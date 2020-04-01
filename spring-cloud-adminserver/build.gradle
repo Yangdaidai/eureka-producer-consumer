@@ -1,0 +1,11 @@
+archivesBaseName = 'spring-cloud-adminserver'
+
+dependencies {
+    implementation (
+            'de.codecentric:spring-boot-admin-starter-server',
+            "org.springframework.boot:spring-boot-starter-security",
+            "org.springframework.boot:spring-boot-starter-mail"
+    )
+}
+
+

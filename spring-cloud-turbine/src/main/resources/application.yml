@@ -21,9 +21,13 @@ management:
       exposure:
         include:  "*"
       base-path:  /actuator  #默认就是/actuator
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 turbine:
   app-config: spring-cloud-consumer,spring-cloud-consumer1
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
+
